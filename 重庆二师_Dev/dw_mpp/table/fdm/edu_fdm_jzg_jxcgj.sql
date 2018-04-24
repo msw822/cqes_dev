@@ -1,0 +1,28 @@
+/*
+#  DESCRIPTION: 教学成果奖
+#
+#      OPTIONS: ---
+# REQUIREMENTS: ---
+#         BUGS: ---
+#        NOTES: ---
+#       AUTHOR: li.zhanlei@h3c.com
+#      COMPANY: h3c.bigdata
+#      VERSION: 1.0
+#      CREATED: 2017/06/29
+#     REVIEWER:--
+#     REVISION: ---
+*/
+use fdm;
+DROP TABLE IF EXISTS `EDU_FDM_JZG_JXCGJ`;
+create table IF NOT EXISTS EDU_FDM_JZG_JXCGJ(
+`ID` VARCHAR(20) DEFAULT NULL COMMENT '获奖ID',
+`HJNF` VARCHAR(6) DEFAULT NULL COMMENT '获奖年月',
+`CGMC` VARCHAR(400) DEFAULT NULL COMMENT '成果名称',
+`WCDW` VARCHAR(60) DEFAULT NULL COMMENT '所在单位',
+`CGWCR` VARCHAR(100) DEFAULT NULL COMMENT '成果发明人',
+`PM` INT(4) DEFAULT NULL COMMENT '排名',
+`HJDJ` VARCHAR(20) DEFAULT NULL COMMENT '获奖等级',
+`HJLB` VARCHAR(60) DEFAULT NULL COMMENT '获奖类别',
+`ZGH` VARCHAR(20) DEFAULT NULL COMMENT '职工号'
+) DEFAULT charset=utf8 COMMENT='[教学成果奖]获奖相关信息';
+-- insert into fdm.EDU_FDM_JZG_JXCGJ (HJNF, CGMC, WCDW, CGWCR, PM, HJDJ, HJLB, ZGH) values ('2004', '我校工科大学生的改革探索', '汽车工程系', '高峰', '3', '三等', '校级', '06862');

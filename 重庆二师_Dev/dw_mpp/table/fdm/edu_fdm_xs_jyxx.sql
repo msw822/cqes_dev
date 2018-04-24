@@ -1,0 +1,26 @@
+/*
+#  DESCRIPTION: 
+#
+#      OPTIONS: ---
+# REQUIREMENTS: ---
+#         BUGS: ---
+#        NOTES: ---
+#       AUTHOR: bi.yanbo@h3c.com
+#      COMPANY: h3c.bigdata
+#      VERSION: 1.0
+#      CREATED: 2017/06/29
+#     REVIEWER:
+#     REVISION: ---
+*/
+
+DROP TABLE IF EXISTS FDM.EDU_FDM_XS_JYXX;
+CREATE TABLE IF NOT EXISTS FDM.EDU_FDM_XS_JYXX (
+  XH VARCHAR(20) NOT NULL COMMENT '学号',
+  XM VARCHAR (60) COMMENT '姓名',
+  BYNF VARCHAR(10) COMMENT '毕业年份',
+  JYLX VARCHAR(10) COMMENT '就业类型(留学/升学/参加工作/未就业)',
+  JYDD VARCHAR(100) COMMENT '就业地点',
+  JYXZ DECIMAL(10, 2) COMMENT '就业薪资',
+  ZYSFDK VARCHAR(10) COMMENT '专业是否对口',
+  XZSFMY VARCHAR(10) COMMENT '薪资是否满意'
+) DEFAULT CHARSET=utf8 COMMENT='[EDU_FDM_XS_JYXX]就业信息表';

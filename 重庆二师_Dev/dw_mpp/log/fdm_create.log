@@ -1,0 +1,240 @@
+----------database-fdm alrealy created, begin create table...
+2017-11-15:05:32:16 executing: edu_dim_bjxx.sql
+edu_dim_bjxx table created successfully
+2017-11-15:05:32:17 executing: edu_dim_dw.sql
+edu_dim_dw table created successfully
+2017-11-15:05:32:34 executing: edu_dim_stcc.sql
+edu_dim_stcc table created successfully
+2017-11-15:05:32:36 executing: edu_dim_xq.sql
+edu_dim_xq table created successfully
+2017-11-15:05:32:37 executing: edu_fdm_jzg_jxcgj.sql
+edu_fdm_jzg_jxcgj table created successfully
+2017-11-15:05:32:37 executing: edu_fdm_ky_lw_attr.sql
+edu_fdm_ky_lw_attr table created successfully
+2017-11-15:05:32:38 executing: edu_fdm_ky_lwfb.sql
+edu_fdm_ky_lwfb table created successfully
+2017-11-15:05:32:39 executing: edu_fdm_ky_lw.sql
+edu_fdm_ky_lw table created successfully
+2017-11-15:05:32:40 executing: edu_fdm_swxx.sql
+edu_fdm_swxx table created successfully
+2017-11-15:05:32:40 executing: edu_fdm_ky_xmjf.sql
+edu_fdm_ky_xmjf table created successfully
+2017-11-15:05:32:41 executing: edu_fdm_ky_xm.sql
+edu_fdm_ky_xm table created successfully
+2017-11-15:05:32:43 executing: edu_fdm_ky_zlcg.sql
+edu_fdm_ky_zlcg table created successfully
+2017-11-15:05:32:43 executing: edu_fdm_ky_zz.sql
+edu_fdm_ky_zz table created successfully
+2017-11-15:05:32:44 executing: edu_fdm_ts_jyjl.sql
+edu_fdm_ts_jyjl table created successfully
+2017-11-15:05:32:45 executing: edu_fdm_ykt_jy.sql
+edu_fdm_ykt_jy table created successfully
+2017-11-15:05:32:45 executing: edu_hb_bmdj.sql
+edu_hb_bmdj table created successfully
+2017-11-15:05:32:47 executing: edu_hb_bzkzy.sql
+edu_hb_bzkzy table created successfully
+2017-11-15:05:32:48 executing: edu_hb_bzlb.sql
+edu_hb_bzlb table created successfully
+2017-11-15:05:32:50 executing: edu_hb_cbsjb.sql
+edu_hb_cbsjb table created successfully
+2017-11-15:05:32:51 executing: edu_hb_gatqw.sql
+edu_hb_gatqw table created successfully
+2017-11-15:05:32:55 executing: edu_hb_gjdq.sql
+edu_hb_gjdq table created successfully
+2017-11-15:05:32:56 executing: edu_hb_hdlx.sql
+edu_hb_hdlx table created successfully
+2017-11-15:05:32:59 executing: edu_hb_hdxlfs.sql
+edu_hb_hdxlfs table created successfully
+2017-11-15:05:33:00 executing: edu_hb_hjlx.sql
+ERROR 1146 (42S02) at line 22: Table 'fdm.edu_hb_hkxz' doesn't exist
+run_fdm_create.sh: line 154: edu_hb_hjlx table created to fail: command not found
+2017-11-15:05:33:01 executing: edu_hb_hkxz.sql
+edu_hb_hkxz table created successfully
+2017-11-15:05:33:03 executing: edu_hb_hyzt.sql
+edu_hb_hyzt table created successfully
+2017-11-15:05:33:05 executing: edu_hb_hzxs.sql
+edu_hb_hzxs table created successfully
+2017-11-15:05:33:07 executing: edu_hb_jb.sql
+edu_hb_jb table created successfully
+2017-11-15:05:33:12 executing: edu_hb_jdfs.sql
+edu_hb_jdfs table created successfully
+2017-11-15:05:33:14 executing: edu_hb_jhwcqk.sql
+edu_hb_jhwcqk table created successfully
+2017-11-15:05:33:15 executing: edu_hb_jkzk.sql
+edu_hb_jkzk table created successfully
+2017-11-15:05:33:17 executing: edu_hb_jldj.sql
+edu_hb_jldj table created successfully
+2017-11-15:05:33:19 executing: edu_hb_jlfs.sql
+edu_hb_jlfs table created successfully
+2017-11-15:05:33:21 executing: edu_hb_js.sql
+edu_hb_js table created successfully
+2017-11-15:05:33:26 executing: edu_hb_jtgx.sql
+edu_hb_jtgx table created successfully
+2017-11-15:05:33:46 executing: edu_hb_jzglb.sql
+edu_hb_jzglb table created successfully
+2017-11-15:05:33:51 executing: edu_hb_jxjlx.sql
+edu_hb_jxjlx table created successfully
+2017-11-15:05:33:52 executing: edu_hb_jljb.sql
+edu_hb_jljb table created successfully
+2017-11-15:05:33:57 executing: edu_hb_jlzzzjly.sql
+edu_hb_jlzzzjly table created successfully
+2017-11-15:05:33:57 executing: edu_hb_kncd.sql
+edu_hb_kncd table created successfully
+2017-11-15:05:33:59 executing: edu_hb_ksfs.sql
+edu_hb_ksfs table created successfully
+2017-11-15:05:34:01 executing: edu_hb_ksxs.sql
+edu_hb_ksxs table created successfully
+2017-11-15:05:34:02 executing: edu_hb_ksxz.sql
+edu_hb_ksxz table created successfully
+2017-11-15:05:34:05 executing: edu_hb_kwjb.sql
+edu_hb_kwjb table created successfully
+2017-11-15:05:34:09 executing: edu_hb_kwzd.sql
+edu_hb_kwzd table created successfully
+2017-11-15:05:34:10 executing: edu_hb_lzlb.sql
+edu_hb_lzlb table created successfully
+2017-11-15:05:34:16 executing: edu_hb_lylx.sql
+edu_hb_lylx table created successfully
+2017-11-15:05:34:16 executing: edu_hb_mz.sql
+edu_hb_mz table created successfully
+2017-11-15:05:34:30 executing: edu_hb_pycc.sql
+edu_hb_pycc table created successfully
+2017-11-15:05:34:31 executing: edu_hb_pyfs.sql
+edu_hb_pyfs table created successfully
+2017-11-15:05:34:35 executing: edu_hb_rkzk.sql
+edu_hb_rkzk table created successfully
+2017-11-15:05:34:38 executing: edu_hb_rxfs.sql
+edu_hb_rxfs table created successfully
+2017-11-15:05:34:42 executing: edu_hb_sfzjlx.sql
+edu_hb_sfzjlx table created successfully
+2017-11-15:05:34:45 executing: edu_hb_shjjxy.sql
+edu_hb_shjjxy table created successfully
+2017-11-15:05:34:48 executing: edu_hb_syzc.sql
+edu_hb_syzc table created successfully
+2017-11-15:05:35:01 executing: edu_hb_sshy.sql
+edu_hb_sshy table created successfully
+2017-11-15:05:35:22 executing: edu_hb_tslb.sql
+edu_hb_tslb table created successfully
+2017-11-15:05:35:23 executing: edu_hb_tsqkzt.sql
+edu_hb_tsqkzt table created successfully
+2017-11-15:05:35:25 executing: edu_hb_whcd.sql
+edu_hb_whcd table created successfully
+2017-11-15:05:35:28 executing: edu_dim_wxlx.sql
+edu_dim_wxlx table created successfully
+2017-11-15:05:35:28 executing: edu_hb_xb.sql
+edu_hb_xb table created successfully
+2017-11-15:05:35:30 executing: edu_hb_xjydlb.sql
+edu_hb_xjydlb table created successfully
+2017-11-15:05:35:38 executing: edu_hb_xjydyy.sql
+edu_hb_xjydyy table created successfully
+2017-11-15:05:35:49 executing: edu_hb_xklb.sql
+edu_hb_xklb table created successfully
+2017-11-15:05:35:50 executing: edu_hb_xkml.sql
+edu_hb_xkml table created successfully
+2017-11-15:05:35:51 executing: edu_hb_xl.sql
+edu_hb_xl table created successfully
+2017-11-15:05:36:00 executing: edu_hb_xmjfly.sql
+edu_hb_xmjfly table created successfully
+2017-11-15:05:36:04 executing: edu_hb_xmlb.sql
+edu_hb_xmlb table created successfully
+2017-11-15:05:36:15 executing: edu_hb_xmly.sql
+edu_hb_xmly table created successfully
+2017-11-15:05:36:21 executing: edu_hb_xmzxzt.sql
+edu_hb_xmzxzt table created successfully
+2017-11-15:05:36:22 executing: edu_hb_xq.sql
+edu_hb_xq table created successfully
+2017-11-15:05:36:23 executing: edu_hb_xsdqzt.sql
+edu_hb_xsdqzt table created successfully
+2017-11-15:05:36:27 executing: edu_hb_xshjlb.sql
+edu_hb_xshjlb table created successfully
+2017-11-15:05:36:29 executing: edu_hb_xsly.sql
+edu_hb_xsly table created successfully
+2017-11-15:05:36:37 executing: edu_hb_xw.sql
+edu_hb_xw table created successfully
+2017-11-15:05:36:50 executing: edu_hb_xx.sql
+edu_hb_xx table created successfully
+2017-11-15:05:36:52 executing: edu_hb_xyzj.sql
+edu_hb_xyzj table created successfully
+2017-11-15:05:36:55 executing: edu_hb_xzqh.sql
+edu_hb_xzqh table created successfully
+2017-11-15:05:36:56 executing: edu_hb_xz.sql
+edu_hb_xz table created successfully
+2017-11-15:05:36:59 executing: edu_hb_yz.sql
+edu_hb_yz table created successfully
+2017-11-15:05:37:00 executing: edu_hb_zczk.sql
+edu_hb_zczk table created successfully
+2017-11-15:05:37:01 executing: edu_hb_zgyz.sql
+edu_hb_zgyz table created successfully
+2017-11-15:05:37:02 executing: edu_hb_zlflzt.sql
+edu_hb_zlflzt table created successfully
+2017-11-15:05:37:03 executing: edu_hb_zllx.sql
+edu_hb_zllx table created successfully
+2017-11-15:05:37:05 executing: edu_hb_zlpzxs.sql
+ERROR 1050 (42S01) at line 18: Table 'edu_hb_zlflzt' already exists
+run_fdm_create.sh: line 154: edu_hb_zlpzxs table created to fail: command not found
+2017-11-15:05:37:05 executing: edu_hb_zzmm.sql
+edu_hb_zzmm table created successfully
+2017-11-15:05:37:08 executing: edu_fdm_jttxfsxx.sql
+edu_fdm_jttxfsxx table created successfully
+2017-11-15:05:37:09 executing: edu_fdm_jzg.sql
+edu_fdm_jzg table created successfully
+2017-11-15:05:37:09 executing: edu_fdm_kc_cjjbxx.sql
+edu_fdm_kc_cjjbxx table created successfully
+2017-11-15:05:37:10 executing: edu_fdm_kc_jbxx.sql
+edu_fdm_kc_jbxx table created successfully
+2017-11-15:05:37:11 executing: edu_fdm_kc_jspj.sql
+edu_fdm_kc_jspj table created successfully
+2017-11-15:05:37:11 executing: edu_fdm_kc_pk.sql
+edu_fdm_kc_pk table created successfully
+2017-11-15:05:37:12 executing: edu_fdm_kc_xsxkxx.sql
+edu_fdm_kc_xsxkxx table created successfully
+2017-11-15:05:37:12 executing: edu_fdm_ky_cgj_ry.sql
+edu_fdm_ky_cgj_ry table created successfully
+2017-11-15:05:37:13 executing: edu_fdm_ky_lw_ry.sql
+edu_fdm_ky_lw_ry table created successfully
+2017-11-15:05:37:14 executing: edu_fdm_ky_xm_ry.sql
+edu_fdm_ky_xm_ry table created successfully
+2017-11-15:05:37:14 executing: edu_fdm_ky_zl_ry.sql
+edu_fdm_ky_zl_ry table created successfully
+2017-11-15:05:37:15 executing: edu_fdm_ky_zz_ry.sql
+edu_fdm_ky_zz_ry table created successfully
+2017-11-15:05:37:15 executing: edu_fdm_ts_dzxx.sql
+edu_fdm_ts_dzxx table created successfully
+2017-11-15:05:37:16 executing: edu_fdm_ts_tsxx.sql
+edu_fdm_ts_tsxx table created successfully
+2017-11-15:05:37:17 executing: edu_fdm_xqxx.sql
+edu_fdm_xqxx table created successfully
+2017-11-15:05:37:17 executing: edu_fdm_xs_jbxx.sql
+edu_fdm_xs_jbxx table created successfully
+2017-11-15:05:37:18 executing: edu_fdm_xs_knxsxx.sql
+edu_fdm_xs_knxsxx table created successfully
+2017-11-15:05:37:18 executing: edu_fdm_xs_lxrxx.sql
+edu_fdm_xs_lxrxx table created successfully
+2017-11-15:05:37:19 executing: edu_fdm_xs_xjxx.sql
+edu_fdm_xs_xjxx table created successfully
+2017-11-15:05:37:19 executing: edu_fdm_xs_xjydxx.sql
+edu_fdm_xs_xjydxx table created successfully
+2017-11-15:05:37:20 executing: edu_fdm_xs_zcxx.sql
+edu_fdm_xs_zcxx table created successfully
+2017-11-15:05:37:21 executing: edu_fdm_xs_zsxx.sql
+edu_fdm_xs_zsxx table created successfully
+2017-11-15:05:37:21 executing: edu_fdm_ykt_shxx.sql
+edu_fdm_ykt_shxx table created successfully
+2017-11-15:05:37:22 executing: edu_fdm_ykt_xx.sql
+edu_fdm_ykt_xx table created successfully
+2017-11-15:05:37:22 executing: edu_fdm_xs_lyxx.sql
+edu_fdm_xs_lyxx table created successfully
+2017-11-15:05:37:23 executing: edu_fdm_ryxx.sql
+edu_fdm_ryxx table created successfully
+2017-11-15:05:37:24 executing: edu_fdm_kcqd.sql
+edu_fdm_kcqd table created successfully
+2017-11-15:05:37:24 executing: edu_fdm_jxjxx.sql
+edu_fdm_jxjxx table created successfully
+2017-11-15:05:37:25 executing: edu_fdm_jlhdxx.sql
+edu_fdm_jlhdxx table created successfully
+2017-11-15:05:37:26 executing: edu_fdm_ccwzlxxx.sql
+edu_fdm_ccwzlxxx table created successfully
+2017-11-15:05:37:26 executing: edu_hb_xslb.sql
+edu_hb_xslb table created successfully
+2017-11-15:05:37:31 executing: edu_fdm_jyxx.sql
+edu_fdm_jyxx table created successfully
+-----------fdm's tables executed completely!-----------

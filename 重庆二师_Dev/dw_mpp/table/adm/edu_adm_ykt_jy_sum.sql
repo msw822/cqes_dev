@@ -1,0 +1,31 @@
+/*
+#  DESCRIPTION: 
+#
+#      OPTIONS: ---
+# REQUIREMENTS: ---
+#         BUGS: ---
+#        NOTES: ---
+#       AUTHOR: bi.yanbo@h3c.com
+#      COMPANY: h3c.bigdata
+#      VERSION: 1.0
+#      CREATED: 2017/06/29
+#     REVIEWER:
+#     REVISION: ---
+*/
+DROP TABLE IF EXISTS ADM.EDU_ADM_YKT_JY_SUM;
+CREATE TABLE
+IF NOT EXISTS ADM.EDU_ADM_YKT_JY_SUM(
+	XH VARCHAR (20) COMMENT '学号',
+	ZYM VARCHAR (8) COMMENT '专业码',
+	ZYM_MC VARCHAR (200) COMMENT '专业名称',
+	SSYXM VARCHAR (50) COMMENT '所属院校码',
+	SSYXM_MC VARCHAR (200) COMMENT '所属院校',
+	LYDQM VARCHAR (10) COMMENT '学生来源地区码,见中华人民共和国行政区划代码表',
+	LYDQM_SM VARCHAR (200) COMMENT '来源地',
+	JGM VARCHAR (10) COMMENT '籍贯码',
+	JGM_SM VARCHAR (200) COMMENT '籍贯',
+	XF_CS INT COMMENT '消费次数',
+	XF_JE DECIMAL (10, 2) COMMENT '消费金额(元)',
+	XF_RJXFE DECIMAL (10, 2) COMMENT '日均消费金额(元)',
+	XF_YJXFE DECIMAL (10, 2) COMMENT '月均消费金额(元)'
+)DEFAULT CHARSET=utf8 COMMENT='一卡通交易adm层宽表';

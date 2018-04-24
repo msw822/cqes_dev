@@ -1,0 +1,10 @@
+----------database-tmp alrealy created, begin create table...
+2017-11-15:05:48:40 executing: edu_tmp_swxx.sql
+edu_tmp_swxx table created successfully
+2017-11-15:05:48:40 executing: edu_tmp_swxx2.sql
+edu_tmp_swxx2 table created successfully
+2017-11-15:05:48:41 executing: edu_tmp_ts_jyjl.sql
+edu_tmp_ts_jyjl table created successfully
+2017-11-15:05:48:41 executing: edu_tmp_bf.sql
+edu_tmp_bf table created successfully
+-----------tmp's tables executed completely!-----------

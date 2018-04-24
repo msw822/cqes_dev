@@ -1,0 +1,13 @@
+-umpp -ph3c
+2017-11-16:05:05:45 executing:TRUNCATE TABLE tmp.edu_tmp_ts_jyjl;
+INSERT INTO tmp.edu_tmp_ts_jyjl
+SELECT A.XH, A.TSLB_MC, MAX(CNTS) AS CNTS
+FROM
+(
+  SELECT XH, TSLB_MC, COUNT(*) AS CNTS
+  FROM GDM.EDU_GDM_TS_JYJL_DA
+  GROUP BY XH, TSLB_MC
+) A
+GROUP BY A.XH, A.TSLB_MC
+-- tmp.edu_tmp_ts_jyjl generated successfully
+-----------all executed completely!-----------

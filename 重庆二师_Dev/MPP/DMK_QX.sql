@@ -1,0 +1,18 @@
+CREATE TABLE DMK_QX (
+"QXDM" VARCHAR(6 ) NOT NULL COMMENT  '区县代码',
+"QXMC" VARCHAR(64 ) NULL COMMENT  '区县名称',
+"SFPKX" VARCHAR(2 ) NULL COMMENT  '是否贫困县(1:是,0:否)' 
+)COMMENT  '区县代码表';
+
+
+
+CREATE TABLE DMK_MZ (
+"MZM" VARCHAR(6 ) NOT NULL COMMENT  '民族代码',
+"MZ" VARCHAR(64 ) NULL COMMENT  '民族名称'
+)COMMENT  '民族代码表';
+
+
+CREATE TABLE DMK_zzmm (
+"dm" VARCHAR(6 ) NOT NULL COMMENT  '政治面貌代码',
+"zzmmmc" VARCHAR(64 ) NULL COMMENT  '政治面貌名称'
+)COMMENT  '政治面貌代码表';

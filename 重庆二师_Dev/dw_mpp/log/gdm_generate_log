@@ -1,0 +1,465 @@
+-umpp -ph3c
+2017-11-16:07:14:18 executing:TRUNCATE TABLE GDM.EDU_GDM_XS_JBXX_DA;
+INSERT INTO GDM.EDU_GDM_XS_JBXX_DA
+SELECT xsjbxx.XH,
+       xsjbxx.XM,
+       xsjbxx.XBM,
+       xb.MC AS XBM_MC,
+       xsjbxx.CSRQ,
+       xsjbxx.JGM,
+       xzqh.XZQHMC AS JGM_MC,
+       xzqh.SM AS JGM_SM,
+       xsjbxx.MZM,
+       mz.MC AS MZM_MC,
+       xsjbxx.GJDQM,
+       NULL AS GJDQM_MC,
+       xsjbxx.SFZJLXM,
+       SFZJLX.MC AS SFZJM_MC,
+       xsjbxx.SFZJH,
+       xsjbxx.HYZKM,
+       HYZK.MC AS HYZKM_MC,
+       xsjbxx.XYZJM,
+       XYZJ.MC AS XYZJM_MC,
+       xsjbxx.XXM,
+       XX.MC AS XXM_MC,
+       xsjbxx.SFZJYXQ,
+       xsjbxx.SFDSZN,
+       xsjbxx.SFZX,
+       xslyxx.YXXMC,
+       xslyxx.RXFSM,
+       RXFS.MC AS RXFSM_MC,
+       xslyxx.LYDQM,
+       xzqh3.XZQHMC AS LYDQM_MC,
+       xzqh3.SM AS LYDQM_SM,
+       xslyxx.SYDM,
+       xzqh2.XZQHMC AS SYDM_MC,
+       xzqh2.SM AS SYDM_SM,
+       xslyxx.JDFSM,
+       jdfs.MC AS JDFSM_MC,
+       xslyxx.LYGBDQM,
+       NULL AS LYGBDQM_MC,
+       xslyxx.DXWPDW,
+       xslyxx.RXQXLM,
+       XL.MC AS RXQXLM_MC,
+       xslyxx.RXQXWM,
+       XW.MC AS RXQXWM_MC,
+       xjxx.RXNY,
+       xjxx.XSLBM,
+       XSLB.MC AS XSLBM_MC,
+       COALESCE(xjxx.XZ, bjxx.XZ) AS XZ,
+       COALESCE(xjxx.ZYM, bjxx.SSZYM) AS ZYM,
+       COALESCE(bzkzy.mc, bjxx.SSZYMC) AS ZYM_MC,
+       xjxx.SZBH,
+       bjxx.BJMC,
+       COALESCE(xjxx.SZNJ, bjxx.SSNJ) AS SZNJ,
+       xjxx.XSDQZTM,
+       xsdqzt.MC AS XSDQZTM_MC,
+       COALESCE(xjxx.SSXYM, bjxx.SSYXM) AS SSYXM,
+       COALESCE(dw_3.DWMC) AS SSYXM_MC,
+       xjxx.XKMLM AS XKMLM,
+       XKML.MC AS XKMLM_MC,
+       xjxx.PYFSM,
+       pyfs.MC AS PYFSM_MC,
+       xjxx.YJFX,
+       xjxx.DSH,
+       JZG.XM AS DSH_XM,
+       xjxx.HDXLFSM,
+       hdxlfs.MC AS HDXLFSM_MC,
+       xjxx.PYCCM,
+       pycc.MC as PYCCM_MC,
+       xjxx.LDFSM,
+       NULL AS LDFSM_MC,
+       dw_3.LSDWH,
+       dw_3.DWLBM,
+       dw_3.DWJB,
+       zsxx.SSFJH,
+       ZZMM.MC,
+       XQXX.XQH,
+       XQXX.XQMC,
+       xsjbxx.ZP
+  FROM fdm.edu_fdm_xs_jbxx xsjbxx
+  LEFT OUTER JOIN fdm.EDU_FDM_XS_LYXX xslyxx ON TRIM(xsjbxx.XH) =
+                                             TRIM(xslyxx.XH)
+  LEFT OUTER JOIN fdm.EDU_FDM_XS_XJXX xjxx ON TRIM(xsjbxx.XH) = TRIM(xjxx.XH)
+  LEFT OUTER JOIN fdm.edu_dim_bjxx bjxx ON TRIM(xjxx.SZBH) = TRIM(bjxx.BH)
+  LEFT OUTER JOIN fdm.edu_hb_bzkzy bzkzy ON TRIM(xjxx.ZYM) =
+                                           TRIM(bzkzy.dm)
+  LEFT OUTER JOIN fdm.edu_dim_dw dw_3 ON TRIM(xjxx.SSXYM) = TRIM(dw_3.DWH)
+  LEFT OUTER JOIN fdm.edu_hb_pyfs pyfs ON TRIM(xjxx.PYFSM) = TRIM(pyfs.DM)
+  LEFT OUTER JOIN fdm.edu_hb_hdxlfs hdxlfs ON TRIM(xjxx.HDXLFSM) =
+                                              TRIM(hdxlfs.DM)
+  LEFT OUTER JOIN fdm.edu_hb_xsdqzt xsdqzt ON TRIM(xjxx.XSDQZTM) =
+                                              TRIM(xsdqzt.DM)
+  LEFT OUTER JOIN fdm.edu_hb_xb xb ON TRIM(xsjbxx.XBM) = TRIM(xb.DM)
+  LEFT OUTER JOIN fdm.edu_hb_xzqh xzqh ON TRIM(xsjbxx.JGM) =
+                                          TRIM(xzqh.XZQH)
+  LEFT OUTER JOIN fdm.edu_hb_xzqh xzqh2 ON TRIM(xslyxx.SYDM) =
+                                           TRIM(xzqh2.XZQH)
+  LEFT OUTER JOIN fdm.edu_hb_xzqh xzqh3 ON TRIM(xslyxx.LYDQM) =
+                                           TRIM(xzqh3.XZQH)
+  LEFT OUTER JOIN fdm.edu_hb_jdfs jdfs ON TRIM(xslyxx.JDFSM) =
+                                          TRIM(jdfs.DM)
+  LEFT OUTER JOIN fdm.edu_hb_pycc pycc ON TRIM(xjxx.PYCCM) = TRIM(pycc.DM)
+  LEFT OUTER JOIN fdm.edu_hb_mz mz ON TRIM(xsjbxx.MZM) = mz.DM
+  LEFT OUTER JOIN fdm.edu_fdm_xs_zsxx zsxx ON TRIM(xsjbxx.XH) = TRIM(zsxx.XH)
+  LEFT OUTER JOIN FDM.EDU_HB_ZZMM ZZMM ON TRIM(XSJBXX.ZZMMM) = TRIM(ZZMM.DM)
+  LEFT OUTER JOIN FDM.EDU_FDM_XQXX XQXX ON TRIM(zsxx.xqh) = TRIM(XQXX.XQH)
+  LEFT OUTER JOIN FDM.EDU_HB_SFZJLX SFZJLX ON TRIM(SFZJLX.DM) = TRIM(xsjbxx.SFZJLXM)
+  LEFT OUTER JOIN FDM.EDU_HB_HYZT HYZK ON TRIM(HYZK.DM) = TRIM(xsjbxx.HYZKM)
+  LEFT OUTER JOIN FDM.EDU_HB_XYZJ XYZJ ON TRIM(XYZJ.DM) = TRIM(xsjbxx.XYZJM)
+  LEFT OUTER JOIN FDM.EDU_HB_XX XX ON TRIM(XX.DM) = TRIM(xsjbxx.XXM)
+  LEFT OUTER JOIN FDM.EDU_HB_RXFS RXFS ON TRIM(RXFS.DM) = TRIM(xslyxx.RXFSM)
+  LEFT OUTER JOIN FDM.EDU_HB_XL XL ON TRIM(XL.DM) = TRIM(xslyxx.RXQXLM)
+  LEFT OUTER JOIN FDM.EDU_HB_XW XW ON TRIM(XW.DM) = TRIM(xslyxx.RXQXWM)
+  LEFT OUTER JOIN FDM.EDU_HB_XSLB XSLB ON TRIM(XSLB.DM) = TRIM(xjxx.XSLBM)
+  LEFT OUTER JOIN FDM.EDU_HB_XKML XKML ON TRIM(XKML.DM) = TRIM(xjxx.XKMLM)
+  LEFT OUTER JOIN FDM.EDU_FDM_JZG JZG ON TRIM(JZG.GH) = TRIM(xjxx.DSH)
+ ;
+-- generated successfully
+2017-11-16:07:14:20 executing:
+TRUNCATE TABLE gdm.edu_gdm_jzg_da;
+INSERT INTO gdm.edu_gdm_jzg_da
+SELECT
+	jzg.GH,
+	jzg.DWH,
+	dw.DWMC AS DWMC,
+	jzg.XM,
+	jzg.YWXM,
+	jzg.XMPY,
+	jzg.CYM,
+	jzg.XBM,
+	xb.MC AS XBM_MC,
+	CSRQ,
+	CSDM,
+	xzqh.XZQHMC AS CSDM_MC,
+	xzqh.SM AS CSDM_SM,
+	jzg.JGM,
+	xzqh_jg.XZQHMC AS JGM_MC,
+	xzqh_jg.SM AS JGM_SM,
+	jzg.MZM,
+	mz.MC AS MZM_MC,
+	jzg.GJDQM,
+	xzqh_gjdq.XZQHMC AS GJDQM_MC,
+	jzg.SFZJLXM,
+	sfzjlx.MC AS SFZJLXM_MC,
+	jzg.SFZJH,
+	jzg.HYZTM,
+	hyzt.MC AS HYZTM_MC,
+	jzg.GATQWM,
+	gatqw.MC AS GATQWM_MC,
+	jzg.ZZMMM,
+	zzmm.MC AS ZZMMM_MC,
+	JKZKM,
+	jkzk.MC AS JKZKM_MC,
+	jzg.XYZJM,
+	xyzj.DM AS XYZJM_MC,
+	jzg.XXM,
+	xx.MC AS XXM_MC,
+	jzg.ZP,
+	jzg.SFZJYXQ,
+	jzg.XQH,
+	xq.XQMC,
+	ZGXLM,
+	xl.MC AS ZGXLM_MC,
+	jzg.WHCDM,
+	whcd.MC AS WHCDM_MC,
+	CJGZNY,
+	jzg.LXRQ,
+	jzg.QXRQ,
+	jzg.CJNY,
+	jzg.BZLBM,
+	bzlb.MC AS BZLBM_MC,
+	jzg.JZGLBM,
+	jzglb.MC AS JZGLBM_MC,
+	jzg.RKZKM,
+	rkzk.MC AS RKZKM_MC,
+	jzg.DABH,
+	jzg.DAWB,
+	jzg.DQZTM,
+	jzg.TC,
+	jzg.XKLBM,
+	NULL AS XKLBM_MC,
+	jzg.YJXKM,
+	NULL AS YJXKM_MC,
+	jzg.EJXKM,
+	NULL AS EJXKM_MC,
+	jzg.YJFX,
+	jzg.ZC
+FROM
+	(SELECT * FROM FDM.EDU_FDM_JZG) jzg
+LEFT OUTER JOIN fdm.edu_dim_dw dw ON jzg.DWH = dw.DWH
+LEFT OUTER JOIN fdm.edu_hb_xb xb ON jzg.XBM = xb.DM
+LEFT OUTER JOIN fdm.edu_hb_xzqh xzqh ON jzg.CSDM = xzqh.XZQH
+LEFT OUTER JOIN fdm.edu_hb_xzqh xzqh_gjdq ON jzg.GJDQM = xzqh_gjdq.XZQH
+LEFT OUTER JOIN fdm.edu_hb_xzqh xzqh_jg ON jzg.CSDM = xzqh_jg.XZQH
+LEFT OUTER JOIN fdm.edu_hb_mz mz ON jzg.MZM = mz.DM
+LEFT OUTER JOIN fdm.edu_hb_sfzjlx sfzjlx ON jzg.SFZJLXM = sfzjlx.DM
+LEFT OUTER JOIN fdm.edu_hb_hyzt hyzt ON jzg.HYZTM = hyzt.DM
+LEFT OUTER JOIN fdm.edu_hb_gatqw gatqw ON jzg.HYZTM = gatqw.DM
+LEFT OUTER JOIN fdm.edu_hb_zzmm zzmm ON jzg.ZZMMM = zzmm.DM
+LEFT OUTER JOIN fdm.edu_hb_jkzk jkzk ON jzg.JKZKM = jkzk.DM
+LEFT OUTER JOIN fdm.edu_hb_xyzj xyzj ON jzg.XYZJM = xyzj.DM
+LEFT OUTER JOIN fdm.edu_HB_xx xx ON jzg.XXM = xx.DM
+LEFT OUTER JOIN fdm.edu_dim_xq xq ON jzg.XQH = xq.XQH
+LEFT OUTER JOIN fdm.edu_hb_xl xl ON jzg.ZGXLM = xl.DM
+LEFT OUTER JOIN fdm.edu_hb_whcd whcd ON jzg.WHCDM = whcd.DM
+LEFT OUTER JOIN fdm.edu_hb_bzlb bzlb ON jzg.BZLBM = bzlb.DM
+LEFT OUTER JOIN fdm.edu_hb_jzglb jzglb ON jzg.JZGLBM = jzglb.DM
+LEFT OUTER JOIN fdm.edu_hb_rkzk rkzk ON jzg.RKZKM = rkzk.DM
+;
+--generated successfully
+2017-11-16:07:14:22 executing:
+TRUNCATE TABLE gdm.edu_gdm_ky_xm_da;
+INSERT INTO gdm.edu_gdm_ky_xm_da
+SELECT 
+xm.XMBH,
+xm.DWH,
+dw.DWMC,
+xm.XMMC,
+xm.ZXBH,
+xm.KSRQ,
+xm.JXRQ,
+xm.XMFZRH,
+xm.XMWTDWM,
+xm.XMWTDWMC,
+xm.XMLYM,
+xmly.MC AS XMLYM_MC,
+xm.MJM,
+mj.MC AS MJM_MC,
+xm.SHJJXYM,
+shjjxy.MC SHJJXYM_MC,
+xm.XKLYM,
+NULL AS XKLYM_MC,
+xm.GJDQM,
+NULL AS GJDQM_MC,
+xm.JHWCQKM,
+jhwcqk.MC AS JHWCQKM_MC,
+xm.HZXSM,
+HZXS.MC AS HZXSM_MC,
+xm.SSJSLY,
+xm.XMPZH,
+xm.XMLBM,
+xmlb.MC AS XMLBM_MC,
+xm.XMJBM,
+NULL AS XMJBM_MC,
+xm.HDLXM,
+hdlx.MC AS HDLXM_MC,
+xm.XMZXZTM,
+zxzt.MC AS ZMZXZTM_MC,
+xm.XMJTXS,
+xm.SBRQ,
+xm.LXRQ,
+xm.ZGBM,
+xm.XKMLKJM,
+xkml.MC AS XKMLKJM_MC,
+xm.SSHYM,
+NULL AS SSHYM_MC,
+xm.DWJSM,
+js.MC AS DWJSM_MC,
+xm.SBXMH,
+xm.YQYJCGJXS,
+xm.XMZY,
+xm.XDWH,
+xm.KTRQ,
+xm.SHJJMB,
+xm.ZTC,
+xm.SSZKT,
+xm.XMLYDW,
+xm.JBM,
+jb.MC AS JBM_MC,
+xmjf.JHJFZE,
+xmjf.XMJFLYM,
+xmjfly.MC AS XMJFLYM_MC,
+xmjf.BRRQ,
+xmjf.BKS,
+xmjf.ZCRQ,
+xmjf.BFXZDWJF,
+xmjf.BKDW
+FROM 
+fdm.edu_fdm_ky_xm xm
+LEFT OUTER JOIN fdm.edu_dim_dw dw
+ON xm.DWH=dw.DWH
+LEFT OUTER JOIN fdm.edu_hb_xmly xmly
+ON xm.XMLYM=xmly.DM
+LEFT OUTER JOIN fdm.edu_hb_bmdj mj
+ON xm.MJM=mj.DM
+LEFT OUTER JOIN fdm.edu_hb_shjjxy shjjxy
+ON xm.SHJJXYM=shjjxy.DM
+LEFT OUTER JOIN fdm.edu_hb_jhwcqk jhwcqk
+ON xm.JHWCQKM=jhwcqk.DM
+LEFT OUTER jOIN fdm.edu_hb_hzxs hzxs
+ON xm.HZXSM=hzxs.DM
+LEFT OUTER JOIN fdm.edu_hb_xmlb xmlb
+ON xm.XMLBM=xmlb.DM
+LEFT OUTER JOIN fdm.edu_hb_hdlx hdlx
+ON xm.HDLXM=hdlx.DM
+LEFT OUTER JOIN fdm.edu_hb_xmzxzt zxzt
+ON xm.XMZXZTM=zxzt.DM
+LEFT OUTER JOIN fdm.edu_hb_xkml xkml
+ON xm.XKMLKJM=xkml.DM
+LEFT OUTER JOIN fdm.edu_hb_js js
+ON xm.DWJSM=js.DM
+LEFT OUTER JOIN fdm.edu_hb_jb jb
+ON xm.JBM=jb.DM
+
+LEFT OUTER JOIN fdm.edu_fdm_ky_xmjf xmjf
+ON xm.XMBH=xmjf.XMBH
+LEFT OUTER JOIN fdm.edu_hb_xmjfly xmjfly
+ON xmjf.XMJFLYM=xmjfly.DM
+;
+--generated successfully
+2017-11-16:07:14:25 executing:TRUNCATE TABLE gdm.edu_gdm_ky_zl_da;
+INSERT INTO gdm.edu_gdm_ky_zl_da
+SELECT
+	zl.ZLCGBH,
+	zl.ZLCGMC,
+	zl.DWH AS DWH_ZL,
+	dw.DWMC AS DWMC_ZL,
+	zl.SQRQ,
+  zl.ZLLXM,
+	zllx.MC AS ZLLXM_MC,
+	zl.PZRQ,
+	zl.FMRS,
+	zl.ZLQR,
+	ry.XM,
+	ry.JSM,
+	js.MC AS JSM_MC,
+	ry.DWH AS DWH_RY,
+    ry.DWMC AS DWMC_RY
+
+FROM
+	fdm.edu_fdm_ky_zlcg zl
+LEFT OUTER JOIN fdm.edu_hb_zllx zllx ON zl.ZLLXM = zllx.DM
+LEFT OUTER JOIN fdm.edu_fdm_ky_zl_ry ry ON zl.ZLCGBH = ry.KYBH
+LEFT OUTER JOIN fdm.edu_hb_js js ON ry.JSM = js.DM
+LEFT OUTER JOIN fdm.edu_dim_dw dw ON zl.DWH=dw.DWH
+;
+--generated successfully
+2017-11-16:07:14:26 executing:
+TRUNCATE TABLE gdm.edu_gdm_ky_zz_da;
+INSERT INTO gdm.edu_gdm_ky_zz_da
+SELECT
+	zz.ZZBH,
+	zz.ZZZWMC,
+	zz.ZZYWMC,
+	zz.DWH,
+	dw.DWMC,
+	zz.XKLYM,
+	NULL AS XKLYM_MC,
+	zz.XMLYM,
+	xmly.MC AS XMLYM_MC,
+	zz.LZLBM,
+	lzlb.MC AS LZLBM_MC,
+	ZGYZM,
+	NULL AS ZGYZM_MC,
+	zz.YZM,
+	NULL AS YZM_MC,
+	zz.CBS,
+	zz.CBSJBM,
+	cbsjb.MC AS CBSJBM_MC,
+	zz.CBRQ,
+	zz.CBH,
+	zz.ZZZS,
+	zz.SSXMBH,
+	zz.ISBNH,
+	zz.YJXK,
+	zz.XXSM,
+	ry.XM,
+    ry.ZC,
+    ry.DWH AS DWH_RY,
+    ry.DWMC AS DWMC_RY,
+    ry.GZL,
+    ry.JSM,
+    js.MC AS JSM_MC,
+    ry.RYLXM,
+    RYLXMC
+FROM
+	fdm.edu_fdm_ky_zz zz
+LEFT OUTER JOIN fdm.edu_dim_dw dw ON zz.DWH = dw.DWH
+LEFT OUTER JOIN fdm.edu_hb_xmly xmly ON zz.XMLYM = xmly.DM
+LEFT OUTER JOIN fdm.edu_hb_lzlb lzlb ON zz.LZLBM = lzlb.DM
+LEFT OUTER JOIN fdm.edu_hb_cbsjb cbsjb ON zz.CBSJBM = cbsjb.DM
+LEFT OUTER JOIN fdm.edu_fdm_ky_zz_ry ry ON zz.ZZBH=ry.KYBH
+LEFT OUTER JOIN fdm.edu_hb_js js ON ry.JSM=js.DM
+;
+--generated successfully
+2017-11-16:07:14:28 executing:TRUNCATE TABLE gdm.edu_gdm_ts_jyjl_da;
+INSERT INTO gdm.edu_gdm_ts_jyjl_da
+SELECT A.TSTM, A.TSMC, A.DZTM, A.SFRZH, B.XH, 
+       D.XM, D.XBM, D.XBM_MC, D.RXNY, D.SZNJ, D.SZBH, D.BJMC, D.ZYM, D.ZYM_MC, 
+       D.SSYXM, D.SSYXM_MC, D.PYCCM, D.PYCCM_MC, D.SFZJH, D.CSRQ,
+       A.JSRQ, A.YHRQ, A.DZXM, A.WJSJ, A.XJCS, A.CSBM, A.CSMC,C.DM, C.MC
+FROM FDM.EDU_FDM_TS_JYJL A
+LEFT JOIN FDM.EDU_FDM_TS_DZXX B ON A.DZTM = B.DZTM
+LEFT JOIN fdm.edu_hb_tslb C ON INSTR(A.TSTM,C.DM) = 1
+LEFT JOIN GDM.edu_gdm_xs_jbxx_da D ON B.XH =D.XH
+-- generated successfully
+2017-11-16:07:14:29 executing:TRUNCATE TABLE GDM.EDU_GDM_YKT_JY_DA;
+INSERT INTO GDM.EDU_GDM_YKT_JY_DA
+SELECT
+  E.XH 学号,
+  B.XM 姓名,
+  B.XBM 性别码,
+  B.XBM_MC 性别,
+  B.RXNY 入学年月,
+  B.SZNJ 所在年级,
+  B.SZBH 所在班号,
+  BJMC 班级名称,
+  B.ZYM 专业码,
+  B.ZYM_MC 专业名称,
+  B.SSYXM 所属院校码,
+  B.SSYXM_MC 所属院校,
+  B.PYCCM 培养层次码,
+  B.PYCCM_MC 培养层次,
+  B.SFZJH 身份证件号,
+  B.CSRQ 出生日期,
+  A.KH 卡号,
+  A.KXL 卡ID,
+  A.JYLX 交易类型,
+  A.JYJE 交易金额,
+  A.JYLSH 交易流水号,
+  A.JYRQ 交易日期,
+  A.JYSJ 交易时间,
+  A.JYDD 交易地点,
+  A.SHDM 商户代码,
+  C.SHMC 商户名称,
+  C.SHLBDM 商户类别代码,
+  C.SHLBMC 商户类别名称,
+  A.ZDJH 终端机编号,
+  A.LJYKCS 累计用卡次数,
+  A.JYYE 交易余额,
+  B.LYDQM 来源地区编码,
+  B.LYDQM_SM,
+  B.JGM 籍贯码,
+  B.JGM_SM
+FROM
+  FDM.EDU_FDM_YKT_JY A
+LEFT JOIN FDM.EDU_FDM_YKT_XX E ON A.KH = E.KH
+LEFT JOIN GDM.EDU_GDM_XS_JBXX_DA B ON E.XH = B.XH
+LEFT JOIN FDM.EDU_FDM_YKT_SHXX C ON A.SHDM = C.SHDM;
+-- generated successfully
+2017-11-16:07:14:30 executing:TRUNCATE TABLE GDM.EDU_GDM_JYXX_DA;
+INSERT INTO GDM.EDU_GDM_JYXX_DA(XH, XM, XBM, XBM_MC, RXNY, SZNJ, SZBH, BJMC, ZYM, ZYM_MC, SSYXM, 
+                            SSYXM_MC, BYNF, JYLX, JYDD, JYXZ, ZYSFDK, XZSFMY)
+SELECT A.XH, 
+       A.XM,
+       B.XBM,
+       B.XBM_MC,
+       B.RXNY,
+       B.SZNJ,
+       B.SZBH,
+       B.BJMC,
+       B.ZYM,
+       B.ZYM_MC,
+       B.SSYXM,
+       B.SSYXM_MC,
+       A.BYNF,
+       A.JYLX,
+       A.JYDD,
+       A.JYXZ,
+       A.ZYSFDK,
+       A.XZSFMY
+FROM FDM.EDU_FDM_JYXX A
+LEFT JOIN GDM.EDU_GDM_XS_JBXX_DA B ON A.XH = B.XH;
+-- generated successfully
+-----------all executed completely!-----------

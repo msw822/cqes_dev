@@ -1,0 +1,58 @@
+----------database-adm alrealy created, begin create table...
+2017-11-15:05:45:36 executing: edu_adm_kc_cj_sum_da.sql
+edu_adm_kc_cj_sum_da table created successfully
+2017-11-15:05:45:36 executing: edu_adm_kc_cj_grhz_da.sql
+edu_adm_kc_cj_grhz_da table created successfully
+2017-11-15:05:45:37 executing: edu_adm_kc_cj_zyhz_da.sql
+edu_adm_kc_cj_zyhz_da table created successfully
+2017-11-15:05:45:37 executing: edu_adm_kc_gk_da.sql
+edu_adm_kc_gk_da table created successfully
+2017-11-15:05:45:38 executing: edu_adm_qd_grhz_da.sql
+edu_adm_qd_grhz_da table created successfully
+2017-11-15:05:45:38 executing: edu_adm_qd_zyhz_da.sql
+edu_adm_qd_zyhz_da table created successfully
+2017-11-15:05:45:39 executing: edu_adm_swxx_zy.sql
+edu_adm_swxx_zy table created successfully
+2017-11-15:05:45:39 executing: edu_adm_swjzsd.sql
+edu_adm_swjzsd table created successfully
+2017-11-15:05:45:40 executing: edu_adm_swsdtj.sql
+edu_adm_swsdtj table created successfully
+2017-11-15:05:45:40 executing: edu_adm_swxx.sql
+edu_adm_swxx table created successfully
+2017-11-15:05:45:41 executing: edu_adm_ts_jyjl_da.sql
+edu_adm_ts_jyjl_da table created successfully
+2017-11-15:05:45:42 executing: edu_adm_ts_lb_da.sql
+edu_adm_ts_lb_da table created successfully
+2017-11-15:05:45:42 executing: edu_adm_ts_ndjyjl_da.sql
+edu_adm_ts_ndjyjl_da table created successfully
+2017-11-15:05:45:43 executing: edu_adm_ts_jyjl_grhz_da.sql
+edu_adm_ts_jyjl_grhz_da table created successfully
+2017-11-15:05:45:43 executing: edu_adm_ts_jyjl_zyhz_da.sql
+edu_adm_ts_jyjl_zyhz_da table created successfully
+2017-11-15:05:45:44 executing: edu_adm_ykt_cc_da.sql
+edu_adm_ykt_cc_da table created successfully
+2017-11-15:05:45:45 executing: edu_adm_ykt_jy_da.sql
+edu_adm_ykt_jy_da table created successfully
+2017-11-15:05:45:45 executing: edu_adm_ykt_st_da.sql
+edu_adm_ykt_st_da table created successfully
+2017-11-15:05:45:46 executing: edu_adm_ykt_zy_da.sql
+edu_adm_ykt_zy_da table created successfully
+2017-11-15:05:45:46 executing: edu_adm_zyhz_da.sql
+edu_adm_zyhz_da table created successfully
+2017-11-15:05:45:47 executing: edu_adm_kc_cj_sum.sql
+edu_adm_kc_cj_sum table created successfully
+2017-11-15:05:45:47 executing: edu_adm_swxx_sum.sql
+edu_adm_swxx_sum table created successfully
+2017-11-15:05:45:48 executing: edu_adm_ts_jyjl_sum.sql
+edu_adm_ts_jyjl_sum table created successfully
+2017-11-15:05:45:49 executing: edu_adm_ykt_jy_sum.sql
+edu_adm_ykt_jy_sum table created successfully
+2017-11-15:05:45:49 executing: edu_adm_kc_cj_xq_da.sql
+edu_adm_kc_cj_xq_da table created successfully
+2017-11-15:05:45:50 executing: edu_adm_kc_cj_zy_da.sql
+edu_adm_kc_cj_zy_da table created successfully
+2017-11-15:05:45:50 executing: edu_adm_jyxx_zy_sum.sql
+edu_adm_jyxx_zy_sum table created successfully
+2017-11-15:05:45:51 executing: edu_adm_jyxx_yx_sum.sql
+edu_adm_jyxx_yx_sum table created successfully
+-----------adm's tables executed completely!-----------

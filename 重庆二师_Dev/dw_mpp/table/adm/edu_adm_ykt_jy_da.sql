@@ -1,0 +1,27 @@
+/*
+#  DESCRIPTION: 
+#
+#      OPTIONS: ---
+# REQUIREMENTS: ---
+#         BUGS: ---
+#        NOTES: ---
+#       AUTHOR: bi.yanbo@h3c.com
+#      COMPANY: h3c.bigdata
+#      VERSION: 1.0
+#      CREATED: 2017/06/29
+#     REVIEWER:
+#     REVISION: ---
+*/
+DROP TABLE IF EXISTS ADM.EDU_ADM_YKT_JY_DA;
+CREATE TABLE
+IF NOT EXISTS ADM.EDU_ADM_YKT_JY_DA(
+	XH VARCHAR (20) COMMENT '学号',
+	ZYM VARCHAR (8) COMMENT '专业码',
+	XF_CS INT COMMENT '消费次数',
+	XF_CSPM INT COMMENT '消费次数排名',
+	XF_JE DECIMAL (10, 2) COMMENT '消费金额(元)',
+	XF_JEPM INT COMMENT '消费金额排名',
+	XF_JEJBB DECIMAL(10, 2) COMMENT '消费金额击败百分比',
+	XF_RJXFE DECIMAL (10, 2) COMMENT '日均消费金额(元)',
+	XF_YJXFE DECIMAL (10, 2) COMMENT '月均消费金额(元)'
+)DEFAULT CHARSET=utf8 COMMENT='一卡通交易adm层宽表';

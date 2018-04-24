@@ -1,0 +1,26 @@
+----------database-gdm alrealy created, begin create table...
+2017-11-15:05:43:30 executing: edu_gdm_jzg_da.sql
+edu_gdm_jzg_da table created successfully
+2017-11-15:05:43:31 executing: edu_gdm_kc_kccj_da.sql
+edu_gdm_kc_kccj_da table created successfully
+2017-11-15:05:43:31 executing: edu_gdm_ky_detail_sum.sql
+edu_gdm_ky_detail_sum table created successfully
+2017-11-15:05:43:32 executing: edu_gdm_ky_xm_da.sql
+edu_gdm_ky_xm_da table created successfully
+2017-11-15:05:43:33 executing: edu_gdm_ky_zl_da.sql
+edu_gdm_ky_zl_da table created successfully
+2017-11-15:05:43:33 executing: edu_gdm_ky_zz_da.sql
+edu_gdm_ky_zz_da table created successfully
+2017-11-15:05:43:34 executing: edu_gdm_swxx.sql
+edu_gdm_swxx table created successfully
+2017-11-15:05:43:34 executing: edu_gdm_ts_jyjl_da.sql
+edu_gdm_ts_jyjl_da table created successfully
+2017-11-15:05:43:35 executing: edu_gdm_txr_da.sql
+edu_gdm_txr_da table created successfully
+2017-11-15:05:43:36 executing: edu_gdm_xs_jbxx_da.sql
+edu_gdm_xs_jbxx_da table created successfully
+2017-11-15:05:43:36 executing: edu_gdm_ykt_jy_da.sql
+edu_gdm_ykt_jy_da table created successfully
+2017-11-15:05:43:37 executing: edu_gdm_jyxx_da.sql
+edu_gdm_jyxx_da table created successfully
+-----------gdm's tables executed completely!-----------
