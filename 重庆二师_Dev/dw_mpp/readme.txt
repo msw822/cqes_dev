@@ -40,6 +40,6 @@ sh run_fdm_backup.sh '-umpp -ph3c' '2017-08-07' >> log/fdm_backup_log 2>&1 &
 
 #全量更新数据时，恢复fdm表数据
 sh run_restore_data.sh '-umpp -ph3c' fdm >> log/fdm_restore_log 2>&1 &
-
+测试
 
 
