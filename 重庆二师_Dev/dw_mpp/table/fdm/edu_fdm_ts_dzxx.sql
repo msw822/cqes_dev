@@ -30,9 +30,9 @@ IF NOT EXISTS fdm.edu_fdm_ts_dzxx (
   `QFK`	BIGINT(11) COMMENT '欠罚款,单位：分',
   `YE`	BIGINT(11) COMMENT '余额',
   `SCDGSJ` VARCHAR(18) COMMENT '上次到馆时间 YYYYMMDD HH:mm:ss',
-  `LJWJCS` TINYINT(3) COMMENT '累计外借册数',
-  `LJCQCS` TINYINT(3) COMMENT '累计超期册数',
-  `LJJFK`	 TINYINT(3) COMMENT '累计交罚款',
+  `LJWJCS` INT(8) COMMENT '累计外借册数',
+  `LJCQCS` INT(8) COMMENT '累计超期册数',
+  `LJJFK`	 YINT(8) COMMENT '累计交罚款',
   `LJPK`	BIGINT(11) COMMENT '累计赔款',
   `LJDGCS`	INT(4) COMMENT'累计到馆次数'
 )DEFAULT CHARSET=utf8 COMMENT='[读者信息表]学生借阅情况的基础表';
