@@ -1,6 +1,7 @@
 -- ----------------------------
 -- Table structure for 馆藏书目库
 -- ----------------------------
+drop table if exists "ods"."tushu_gcsml";
 CREATE TABLE "ods"."tushu_gcsml" (
 "KJM" int(5) NOT NULL COMMENT'库键码',
 "ZJM" int(10) NOT NULL COMMENT'主键码',
@@ -36,7 +37,7 @@ CREATE TABLE "ods"."tushu_gcsml" (
 "CJSJ" DATETIME NULL COMMENT'创建时间',
 "SMJLH" VARCHAR(50 ) NULL COMMENT'书目记录号',
 "FM" BLOB NULL COMMENT'封面',
-"JG" int DEFAULT 0  NULL COMMENT'价格',
+"JG" DECIMAL(5,2)  NULL COMMENT'价格',
 "WXLX" int DEFAULT 0  NULL COMMENT'文献类型',
 "ZRZ1" VARCHAR(200 ) NULL COMMENT'责任者一',
 "ZRZ2" VARCHAR(200 ) NULL COMMENT'责任者二',
