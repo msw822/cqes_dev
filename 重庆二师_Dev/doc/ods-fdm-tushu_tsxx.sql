@@ -1,0 +1,48 @@
+truncate table fdm.edu_fdm_ts_tsxx;
+insert into fdm.edu_fdm_ts_tsxx
+SELECT
+	gcsml.ZJM,
+	gcdck.TXM TSTXM,
+	gcsml.TM ZBT,
+	NULL BLBT,
+	NULL FBT,
+	gcsml.TMSX JSGJZ,
+	gcsml.SSH,
+	null TSCBH,
+	gcsml.ZRZ DYZZ,
+	null QTZZ,
+	gcsml.JG,
+	gcsml.WXLX WXLXM,
+	null ZDM,
+	gcsml.FL FLH,
+	null ZGYZM,
+	gcsml.YZ YZM,
+	null KB,
+	null YS,
+	gcsml.BC,
+	null TSFJMC,
+	gcsml.CSM CSMC,
+	null CSBZ,
+	gcsml.CBS,
+	null CBSJBM,
+	gcsml.CBD,
+	date_format(gcsml.CBRQ,'%Y%m%d') CBRQ,
+	null FXDW,
+	null BZ,
+	null TSZTM,
+	gcsml.WXLX,
+	gcsml.CS,
+	gcsml.KWJS,
+	gcsml.YWJS,
+	gcsml.YYS,
+	gcsml.TXYS,
+	gcsml.SYWJCS,
+	gcsml.BYWJCS,
+	gcsml.QNWJCS,
+	gcsml.JNWJCS,
+	gcsml.LJWJCS
+FROM
+	ods.tushu_gcsml gcsml,
+	ods.tushu_gcdck gcdck
+WHERE
+	gcsml.ZJM = gcdck.ZJM;
