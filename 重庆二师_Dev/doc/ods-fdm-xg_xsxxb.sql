@@ -1,5 +1,21 @@
+/*
+#  DESCRIPTION: 
+#
+#      OPTIONS: ---
+# REQUIREMENTS: ---
+#         BUGS: ---
+#        NOTES: ---
+#       AUTHOR: mashaowei@h3c.com
+#      COMPANY: h3c.bigdata
+#      VERSION: 1.0
+#      CREATED: 2018/04/27
+#     REVIEWER:
+#     REVISION: ---
+*/
 
-TRUNCATE talbe fdm.edu_fdm_xs_jbxx
+/*fdm 学生基本信息表插入语句 */
+
+TRUNCATE table fdm.edu_fdm_xs_jbxx;
 INSERT INTO fdm.edu_fdm_xs_jbxx SELECT
 	xh,
 	xm,
@@ -28,3 +44,32 @@ INSERT INTO fdm.edu_fdm_xs_jbxx SELECT
 	NULL
 FROM
 	ods.xg_XSXXB
+    
+   
+
+/*fdm 学生学籍信息表插入语句 */
+
+TRUNCATE table fdm.edu_fdm_xs_xjxx;   
+INSERT INTO fdm.edu_fdm_xs_xjxx 
+SELECT
+	XH,
+	RXRQ,
+	XSLB,
+	XZ,
+	ZYDM,
+	BJDM,
+	NJ,
+	NULL,
+	XYDM,
+	NULL,
+	PYCC,
+	ZYFX,
+	NULL,
+	NULL,
+	XXXS,
+	PYCC,
+	NULL,
+	NULL,
+	NULL
+FROM
+	ods.xg_xsxxb;
