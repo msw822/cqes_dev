@@ -1,0 +1,48 @@
+select a.xn,
+a.xq,
+null,
+a.xh,
+c.kcdm,
+a.pscj,
+null,
+null,
+null,
+decode((a.cj REGEXP '[^0-9.]'),'0',a.cj,null), --分离等级和分数成绩
+decode((a.cj REGEXP '[^0-9.]'),'1',a.cj,null),
+a.cj,
+a.zscj,
+a.zscj,
+null,
+c.jszgh,
+null,
+null,
+null,
+a.qmcj,
+a.sycj,
+null,
+c.jxbmc,
+b.zymc,
+b.xy,
+null,
+a.xf,
+a.xf,
+replace(c.zhxs,'+',''),--处理异常符号
+a.jd,
+a.kcxz,
+c.kclb,
+null,
+null
+from ods.jw_cjb a 
+left join ods.xg_xsxxb b on a.xh=b.xh
+left join
+(select  xkkh,
+max(a.kcdm) kcdm,
+max(a.jszgh) jszgh,
+max(a.jxbmc) jxbmc,
+max(a.zhxs) zhxs,
+max(a.kclb) kclb
+from ods.jw_jxrwb a
+group by 
+a.xkkh) c on a.xkkh=c.xkkh
+
+

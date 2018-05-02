@@ -73,3 +73,36 @@ SELECT
 	NULL
 FROM
 	ods.xg_xsxxb;
+    
+
+    
+    
+/*fdm 学生学籍异动信息表插入语句 */    
+
+TRUNCATE table fdm.edu_fdm_xs_xjydxx;  
+INSERT INTO fdm.edu_fdm_xs_xjydxx    
+    SELECT
+	YDLB,
+	YDSJ,
+	YDYY,
+	CZRQ,
+	CLWH,
+	ZXQXXMC,
+	ZXHXXMC,
+	YDSM,
+	YDQXY,
+	YDQZY,
+	YDQXZB,
+	YDQSZNJ,
+	CAST (YDQXZ as decimal(3,1)),
+	YDHXY,
+	YDHZY,
+	YDHXZB,
+	YDHSZNJ,
+	CAST (YDHXZ as decimal(3,1)),
+	XH,
+	NULL,
+	NULL,
+	YDQZYFX
+FROM
+	ods.jw_xjydb 

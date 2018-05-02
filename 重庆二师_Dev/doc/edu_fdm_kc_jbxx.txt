@@ -1,0 +1,18 @@
+SELECT
+	A .KCDM,
+	A .KCZWMC,
+	A .KCYWMC,
+	A .XF,
+	A .ZXS,
+	replace(A .zhxs,'+',''),--Ãÿ ‚∑˚∫≈¥¶¿Ì
+	A .LLXS,
+	A .SYXS,
+	A .KCJJ,
+	NULL,
+	A .ZYCKS,
+	NULL,
+	A .KKBMDM,
+	NULL,
+	A .kcxz
+FROM
+	ods.jw_kcdmb A

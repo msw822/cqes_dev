@@ -1,0 +1,39 @@
+select a.jxjhh,
+a.kkxy,
+a.xn,
+a.xq,
+a.sksj,
+a.skdd,
+null,
+null,
+null,
+null,
+null,
+null,
+b.nj,
+null,
+null,
+null,
+null,
+a.jszgh,
+a.jsxm,
+a.kcxz,
+null,
+null,
+null,
+null
+from (select  xkkh,
+max(a.jxjhh) jxjhh,
+max(a.kkxy) kkxy,
+max(a.xn) xn,
+max(a.xq) xq,
+max(a.sksj) sksj,
+max(a.skdd) skdd,
+max(a.jszgh) jszgh,
+max(a.jsxm) jsxm,
+max(a.kcxz) kcxz
+from ods.jw_jxrwb a
+group by 
+a.xkkh) a 
+right join ods.jw_xsxkb b
+on a.xkkh=b.xkkh
