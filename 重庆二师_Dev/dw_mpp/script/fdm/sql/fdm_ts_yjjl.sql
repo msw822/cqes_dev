@@ -13,20 +13,21 @@
 #     REVISION: ---
 */
 
-
+TRUNCATE fdm.edu_fdm_ts_jyjl;
 INSERT INTO fdm.edu_fdm_ts_jyjl
 SELECT
 	ltk.ZJM,
 	gcsml.TM,
 	ltk.DZTM,
 	ltk.DZTM,
-	DATE_FORMAT(ltk.WJSJ,'%Y%m%d %H:%i:%S'),
-    DATE_FORMAT(ltk.YGHSJ,'%Y%m%d %H:%i:%S'),
+	DATE_FORMAT(ltk.WJSJ,'%Y-%m-%d %H:%i:%S'),
+    DATE_FORMAT(ltk.YGHSJ,'%Y-%m-%d %H:%i:%S'),
 	DZK.XM,
-	DATE_FORMAT(ltk.WJSJ,'%Y%m%d %H:%i:%S'),
+	DATE_FORMAT(ltk.WJSJ,'%Y-%m-%d %H:%i:%S'),
 	ltk.XJCS,
 	ltk.LTKSJM,
-    NULL
+    NULL,
+    DT
 
 FROM
 	ods.tushu_ltk ltk
